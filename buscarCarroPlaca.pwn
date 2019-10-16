@@ -22,7 +22,7 @@ public OnGameModeInit() {
 stock procurarPlaca(placaV[]) { 
     new string[40]; 
     for(new i = 1; i < MAX_VEHICLES; i++) { 
-        if(strcmp(Veiculo[i][Placa], placaV, false) == 0) { 
+        if(!strcmp(Veiculo[i][Placa], placaV, false) { 
             format(string, sizeof(string), "Carro ID: %d - Placa: %s", i, placaV); 
             printf("%s", string); 
             return i; 
